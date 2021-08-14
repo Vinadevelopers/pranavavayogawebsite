@@ -1,0 +1,165 @@
+.root{
+    width: 100%;
+}
+.home_page_root_container{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.home_page_inner_container{
+    width: 100%;
+    height: 100%;
+}
+.header_container{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 0.75;
+    display: flex;
+}
+.logo {
+    width: 90px
+}
+.header_left_side{
+    width: 50%
+}
+.header_right_side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.righ_item{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.first_page{
+    background-image: url("./image/yogo.jpg");
+    width: 100%;
+    height: 500px;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.first_text_box{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    display: flex;
+}
+.firsr_page_content{
+    align-self: center
+}
+.image_page{
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+.image_page,.profile_image{
+    display: flex;
+    justify-content: center;
+}
+.finalPage_box{
+    justify-content: center;
+    text-align: center;
+}
+.Footer_container {
+    text-align: center;
+    background-color: black;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding: 5px;
+}
+.footer_option {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.footer_socical_icon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+.MuiAvatar-root.MuiAvatar-circular.facebook.MuiAvatar-colorDefault,
+.MuiAvatar-root.MuiAvatar-circular.insta.MuiAvatar-colorDefault,
+.MuiAvatar-root.MuiAvatar-circular.youtupe.MuiAvatar-colorDefault,
+.MuiAvatar-root.MuiAvatar-circular.twitter.MuiAvatar-colorDefault {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.footer_socical_icon .MuiAvatar-colorDefault {
+    color: #fafafa;
+    background-color: #ffffff;
+}
+.facebook svg.MuiSvgIcon-root {
+    color: blue;
+}
+.insta svg.MuiSvgIcon-root {
+    color: #de2a8b;
+}
+.youtupe svg.MuiSvgIcon-root {
+    color: red;
+}
+.twitter svg.MuiSvgIcon-root {
+    color: #156df1;
+}
+
+/*finalpage*/
+.MuiGrid-root.finalPage.MuiGrid-container {
+    background-color: #f8f8f8;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+.profile_image .MuiAvatar-root.MuiAvatar-circular {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.profile_image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+/*thirdpage*/
+.MuiGrid-root.third_page_container.MuiGrid-container.MuiGrid-spacing-xs-2{
+    background-color: #f8f8f8;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+.third_page_image {
+    display: flex;
+    justify-content: center;
+}
+.third_page_image img {
+    width: 50%;
+}
+.secound_page_image1,.secound_page_image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+.secound_page_image1 img {
+    width: 25%;
+}
+.secound_page_image img {
+    width: 50%;
+}
+.MuiGrid-root.\31 st_row.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-6.MuiGrid-grid-md-6 {
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+.MuiGrid-root.\32 nd_row.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-6.MuiGrid-grid-md-6 {
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
