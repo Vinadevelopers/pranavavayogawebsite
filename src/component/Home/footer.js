@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from "./image/logo192.png";
+import Logo from "./image/Logo.png";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';

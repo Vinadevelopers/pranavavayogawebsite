@@ -4,23 +4,57 @@ import Image1 from "../image/image_1.jpg";
 import Image2 from "../image/image_2.jpg";
 import { Grid } from "@material-ui/core";
 
-const item = require("../details.json");
+const item = require("../finalPage.json");
 
 class FinalPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            activie: true,
+            selectItem: item.finalPage.details[2]
+        }
+    }
+
+    setItem(e) {
+        this.setState({
+            selectItem: e
+        })
+    }
+
+    getProfileData(data) {
+        return <>
+            {data.details.map((e, index) => {
+                return <>
+                    <div className={this.state.selectItem.name === e.name ? `${"active_iamge"} ${"profile_image"}` : "profile_image"}>
+                        <Avatar alt="Remy Sharp" onClick={this.setItem.bind(this, e)} src={e.image} />
+                        {this.state.selectItem.name === e.name && <div className="profiledesc">
+                            <h5>{this.state.selectItem.name}</h5>
+                            <p>{this.state.selectItem.position}</p>
+                        </div>
+                        }
+                    </div>
+                </>
+            })
+            }
+        </>
+    }
+
     render() {
+        const data = item.finalPage;
         return (
             <Grid container className="finalPage">
                 <Grid item md={4} xl={4} />
                 <Grid item md={4}>
-                    <div className="finalPage_box">
-                        <div className="finalPage_content">
-                            <h3>{item.finalPage.title}</h3>
-                            <p>{item.finalPage.description}</p>
+                    <div>
+                        <h3 className="final_page_title">{data.title}</h3>
+                        <div className="final_page_desc">
+                            {this.state.selectItem && <div className="finalPage_content">
+                                <p style={{ color: "#08150A" }} className="all_description_text">{this.state.selectItem.description}</p>
+                            </div>
+                            }
                         </div>
-                        <div className="profile_image">
-                            <Avatar alt="Remy Sharp" src={Image1} />
-                            <Avatar alt="Remy Sharp" src={Image2} />
-                            <Avatar alt="Remy Sharp" src={Image1} />
+                        <div className="finalPage_box">
+                            {this.getProfileData(data)}
                         </div>
                     </div>
                 </Grid>

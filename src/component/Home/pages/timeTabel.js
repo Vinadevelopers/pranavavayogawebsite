@@ -72,8 +72,8 @@ class TimeTable extends React.Component {
                     <Grid item md={4} xl={4} />
                     <Grid item md={4}>
                         <div className="timeTable_page_inner_container">
-                            <h4>{item.TimeTable.title}</h4>
-                            <p>{item.TimeTable.description}</p>
+                            <h3>{item.TimeTable.title}</h3>
+                            <p className="all_description_text">{item.TimeTable.description}</p>
                         </div>
                     </Grid>
                 </Grid>

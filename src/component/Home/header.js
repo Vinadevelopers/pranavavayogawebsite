@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from "./image/logo192.png";
+import Logo from "./image/Logo.png";
 import { Link } from 'react-scroll';
 
 const Item = require("./details.json")
