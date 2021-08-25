@@ -54,8 +54,8 @@ class ThirdPage extends React.Component {
                 <Grid item md={6} sm={6} xs={12}>
                     <div className="third_page_title">
                         <Avatar alt="Remy Sharp" src={MATTE} />
-                        <h3>{item.ThirdPage.yogoClass.part3["title"]}</h3>
-                        <p className="all_description_text">{item.ThirdPage.yogoClass.part3["description"]}</p>
+                        <h3>{item.ThirdPage.yogoClass.part4["title"]}</h3>
+                        <p className="all_description_text">{item.ThirdPage.yogoClass.part4["description"]}</p>
                     </div>
                 </Grid>
             </Grid>
