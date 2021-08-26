@@ -1,8 +1,8 @@
 import * as React from "react";
 import Avatar from '@material-ui/core/Avatar';
-import Image1 from "../image/image_1.jpg";
-import Image2 from "../image/image_2.jpg";
 import { Grid } from "@material-ui/core";
+import { Grow } from '@material-ui/core';
+
 
 const item = require("../finalPage.json");
 
@@ -48,9 +48,12 @@ class FinalPage extends React.Component {
                     <div>
                         <h3 className="final_page_title">{data.title}</h3>
                         <div className="final_page_desc">
-                            {this.state.selectItem && <div className="finalPage_content">
-                                <p style={{ color: "#08150A" }} className="all_description_text">{this.state.selectItem.description}</p>
-                            </div>
+                            {this.state.selectItem &&
+                                <Grow timeout={true ? 10000 : ""} in={true}>
+                                    <div className="finalPage_content">
+                                        <p style={{ color: "#08150A" }} className="all_description_text">{this.state.selectItem.description}</p>
+                                    </div>
+                                </Grow>
                             }
                         </div>
                         <div className="finalPage_box">

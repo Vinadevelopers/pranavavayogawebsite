@@ -1,10 +1,17 @@
 import * as React from "react";
 import Logo from "./image/Logo.png";
 import { Link } from 'react-scroll';
-
 const Item = require("./details.json")
 
 class Header extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            anchorEl: false,
+            value:""
+        }
+    }
 
     GetRightItem() {
         return Item.RightItem.map(e => {

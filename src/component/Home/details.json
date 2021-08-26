@@ -13,6 +13,24 @@
             "displayName": "Contact Us"
         }
     ],
+    "session": [
+        {
+            "id": "firstPage",
+            "displayName": "Yoga Classes"
+        },
+        {
+            "id": "secondPage",
+            "displayName": "Online Yoga Class"
+        },
+        {
+            "id": "thirdPage",
+            "displayName": "Classes Timetable"
+        },
+        {
+            "id": "fourthPage",
+            "displayName": "What real people say"
+        }
+    ],
     "firstPage": {
         "title": "Online Meditation & Breath Workshop...",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus, est id placerat feugiat, risus arcu porta tortor, nec convallis purus magna vitae justo. Suspendisse et venenatis ligula."

@@ -2,10 +2,14 @@ import * as React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
-import Image1 from "../image/image_3.jpg";
-import Image2 from "../image/image_4.jpg";
-import Image3 from "../image/image_5.jpg";
-import Image4 from "../image/image_1.jpg";
+import Image1 from "../image/image1.jpg";
+import Image2 from "../image/image2.jpg";
+import Image3 from "../image/image3.jpg";
+import Image4 from "../image/image4.jpg";
+import Image5 from "../image/image5.jpg";
+import Image6 from "../image/image6.jpg";
+import Image7 from "../image/image7.jpg";
+import Image8 from "../image/image8.jpg";
 
 const item = require("../details.json");
 
@@ -34,15 +38,27 @@ export default function FourthPage() {
                     <ImageListItem cols={6}>
                         <img src={Image2} alt="image2" />
                     </ImageListItem>
-                    <ImageListItem cols={8}>
+                    <ImageListItem cols={4}>
                         <img src={Image3} alt="image3" />
+                    </ImageListItem>
+                    <ImageListItem cols={8}>
+                        <img src={Image4} alt="image1" />
                     </ImageListItem>
                 </ImageList>
             </div>
             <div>
                 <ImageList className={classes.imageList} cols={24}>
                     <ImageListItem cols={8}>
-                        <img src={Image4} alt="image1" />
+                        <img src={Image5} alt="image1" />
+                    </ImageListItem>
+                    <ImageListItem cols={16}>
+                        <img src={Image6} alt="image3" />
+                    </ImageListItem>
+                    <ImageListItem cols={10}>
+                        <img src={Image7} alt="image2" />
+                    </ImageListItem>
+                    <ImageListItem cols={14}>
+                        <img src={Image8} alt="image2" />
                     </ImageListItem>
                 </ImageList>
             </div>

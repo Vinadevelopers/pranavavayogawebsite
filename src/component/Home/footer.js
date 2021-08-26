@@ -5,7 +5,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Avatar from '@material-ui/core/Avatar';
-
+import { Link } from 'react-scroll';
 
 const Item = require("./details.json")
 
@@ -13,7 +13,9 @@ class Footer extends React.Component {
 
     GetRightItem() {
         return Item.footerDetails.item.map(e => {
-            return <div className="righ_item" id={e.id}>{e.displayName}</div>
+            return <div className="righ_item" id={e.id}>
+             <Link to={e.id} spy={true} smooth={true}>{e.displayName}</Link>
+            </div>
         })
     }
 
