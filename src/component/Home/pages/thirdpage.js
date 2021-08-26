@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Grid } from "@material-ui/core";
-import Image3 from "../image/image_3.jpg";
+import Image3 from "../image/online-yoga.jpg";
 import YOGO from "../image/icons-guru.png";
 import LOTUS from "../image/icons-lotus.png";
 import LOTUS1 from "../image/icons-yoga1.png";
