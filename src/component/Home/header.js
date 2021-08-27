@@ -24,8 +24,9 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header_container">
-                <div className="header_left_side">
-                    <img src={Logo} className="logo" />
+                <div className="header_left_side">                
+                    <img src={Logo} className="logo" /> 
+                    <p className="white-text">The Meaning Of Life</p>                   
                 </div>
                 <div className="header_right_side">
                     {this.GetRightItem()}

@@ -14,7 +14,7 @@ class Footer extends React.Component {
     GetRightItem() {
         return Item.footerDetails.item.map(e => {
             return <div className="righ_item" id={e.id}>
-             <Link to={e.id} spy={true} smooth={true}>{e.displayName}</Link>
+             <Link className ="a-link" to={e.id} spy={true} smooth={true}>{e.displayName}</Link>
             </div>
         })
     }
@@ -24,6 +24,7 @@ class Footer extends React.Component {
             <div id="contact" className="Footer_container">
                 <div className="footer_center_logo">
                     <img src={Logo} className="logo" />
+                    <p className="white-text">The Meaning Of Life</p>
                 </div>
                 <div className="footer_option">
                     {this.GetRightItem()}

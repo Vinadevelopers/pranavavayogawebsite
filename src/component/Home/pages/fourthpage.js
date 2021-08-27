@@ -33,7 +33,7 @@ export default function FourthPage() {
             <div>
                 <ImageList className={classes.imageList} cols={12}>
                     <ImageListItem cols={6}>
-                        <img src={Image1} alt="image1" />
+                        <img src={Image1} alt="yoga" />
                     </ImageListItem>
                     <ImageListItem cols={6}>
                         <img src={Image2} alt="image2" />

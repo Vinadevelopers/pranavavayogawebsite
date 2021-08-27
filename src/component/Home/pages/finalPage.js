@@ -49,7 +49,7 @@ class FinalPage extends React.Component {
                         <h3 className="final_page_title">{data.title}</h3>
                         <div className="final_page_desc">
                             {this.state.selectItem &&
-                                <Grow timeout={true ? 10000 : ""} in={true}>
+                                <Grow timeout={true ? 5000 : ""} in={true}>
                                     <div className="finalPage_content">
                                         <p style={{ color: "#08150A" }} className="all_description_text">{this.state.selectItem.description}</p>
                                     </div>

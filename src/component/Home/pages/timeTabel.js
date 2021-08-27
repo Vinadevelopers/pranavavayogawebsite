@@ -80,13 +80,19 @@ class TimeTable extends React.Component {
                 <Paper>
                     <Scheduler
                         data={data}
+                        // height={630}
+                       
                     >
                         <ViewState
                             defaultCurrentDate={currentDate}
                         />
                         <WeekView
-                            startDayHour={9}
-                            endDayHour={14}
+                
+                            startDayHour={5}
+                            intervalCount={1}
+                            cellDuration={60}
+                            endDayHour={19}
+                            
                         />
                         <Toolbar />
                         <Appointments />
