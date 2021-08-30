@@ -29,7 +29,9 @@ class Header extends React.Component {
                     {/* <p className="white-text">The Meaning Of Life</p>                    */}
                 </div>
                 <div className="header_right_side">
+                <div className="heder-right-item-container">
                     {this.GetRightItem()}
+                </div>
                 </div>
             </div>
         );
