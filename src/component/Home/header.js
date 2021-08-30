@@ -9,31 +9,31 @@ class Header extends React.Component {
         super(props)
         this.state = {
             anchorEl: false,
-            value:""
+            value: ""
         }
     }
 
     GetRightItem() {
         return Item.RightItem.map(e => {
             return <div className="righ_item">
-                <Link to={e.id} spy={true} smooth={true}>{e.displayName}</Link>
+                <a href={e.href} >{e.displayName} </a>
             </div>
         })
     }
 
     render() {
         return (
-            <div className="header_container">
-                <div className="header_left_side">                
-                    <img src={Logo} className="logo" /> 
+            <div className={this.props.id ? "contact-page-header header_container" : "header_container"}>
+                <div className="header_left_side">
+                    <img src={Logo} className="logo" />
                     {/* <p className="white-text">The Meaning Of Life</p>                    */}
                 </div>
                 <div className="header_right_side">
-                <div className="heder-right-item-container">
-                    {this.GetRightItem()}
+                    <div className="heder-right-item-container">
+                        {this.GetRightItem()}
+                    </div>
                 </div>
-                </div>
-            </div>
+            </div >
         );
     }
 }

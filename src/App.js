@@ -2,6 +2,7 @@ import * as React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
 import Home from "./component/Home/home";
+import ContactPage from "./component/Contact/contactPage";
 import Scroll from "./rot";
 class App extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class App extends React.Component {
         <Scroll>
           <Switch>
             <Route path="/pranava_yogo" component={Home} />
+            <Route path="/contact" component={ContactPage} />
             <Route exact path="/" render={() => <Redirect to="/pranava_yogo" />} />
           </Switch>
         </Scroll>

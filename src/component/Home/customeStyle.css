@@ -18,6 +18,14 @@ line-height: 1.5;
 .header_container {
     padding: 0px 55px 0px 70px;
 }
+.heder-right-item-container .righ_item a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-page-header.header_container {
+    background: #d8d8d8 0% 0% no-repeat;
+}
 .header_container{
     top: 0px;
     left: 0px;
@@ -182,10 +190,13 @@ div#firstPage {
     width: 80%;
 
 }
+.secound_page_image {
+    margin-bottom: 55px;
+}
 .secound_page_image1 {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 12px;
+    margin-bottom: 55px;
 }
 .secound_page_image1 img {
     width: 300px;
@@ -238,7 +249,7 @@ font-size: 15px;
 color: #888888;
 line-height: 1.8;
 }
-.all_description_text_color,.highlight-words{
+.all_description_text_color,.highlight-words,.highlight{
 color:#FF3481;
 font-size: 18px;
 line-height: 1.3;
@@ -281,7 +292,7 @@ line-height: 1.3;
 .scroll-page-contianer {
     list-style: none;
     position: fixed;
-    top: 20%;
+    top: 30%;
     right: 0%;
     transform: translateY(-50%);
     /* display: flex; */
@@ -318,7 +329,7 @@ a.option-render.active-page {
 .true-scroll-page-container-image{
     list-style: none;
     position: fixed;
-    top: 20%;
+    top: 30%;
     right: 12%;
     width: 30px;
     transform: translateY(-50%);
@@ -336,4 +347,24 @@ p.Cell-dayOfWeek-26 {
     font-size: 18px;
     margin-bottom: 8px;
     margin-top: 8px;
+}
+
+.contact-page-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contact-title,.address-field-root {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.please-contact {
+    display: flex;
+}
+.please-contact p.highlight {
+    margin-left: 8px;
+}
+.timeTable_page .makeStyles-appointment-275,.timeTable_page .makeStyles-appointment-279 {
+    background-color: rgb(246 100 215);
 }

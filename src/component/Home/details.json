@@ -2,15 +2,18 @@
     "RightItem": [
         {
             "id": "home",
-            "displayName": "Home"
+            "displayName": "Home",
+            "href": "/"
         },
         {
             "id": "about",
-            "displayName": "About Us"
+            "displayName": "About Us",
+            "href": "about"
         },
         {
             "id": "contact",
-            "displayName": "Contact Us"
+            "displayName": "Contact Us",
+            "href": "/contact"
         }
     ],
     "session": [
