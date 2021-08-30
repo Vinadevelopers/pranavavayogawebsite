@@ -320,7 +320,7 @@ a.option-render.active-page {
 .scroll-page-contianer-image{
     list-style: none;
     position: fixed;
-    top: 20%;
+    top: 30%;
     right: 0%;
     width: 30px;
     transform: translateY(-50%);
