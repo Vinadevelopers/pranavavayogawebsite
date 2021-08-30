@@ -10,6 +10,7 @@ import Footer from "./footer";
 import { Link } from 'react-scroll';
 import Lefticon from "./image/left-icon.gif";
 import Righticon from "./image/right-icon.gif";
+import { Slide } from "@material-ui/core"
 
 const Item = require("./details.json")
 
@@ -18,16 +19,31 @@ class Home extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            show: false
+            show: true,
+            active: ""
         }
     }
 
-    getSessionList() {
+    getSessionList(item, e) {
+        e.stopPropagation();
+        this.setState({
+            active: item,
+        })
+    }
 
+    getIconClick() {
         this.setState({
             show: !this.state.show,
         })
+    }
 
+    getPageItem(Item) {
+        return Item.session.map((e, i) => {
+            return <Link className={this.state.active === e.id ? "option-render active-page" : "option-render"} onClick={this.getSessionList.bind(this, e.id)} to={e.id} hashSpy={true} spy={true} smooth={true}>
+                {e.displayName}
+            </Link>
+
+        })
     }
 
     render() {
@@ -52,21 +68,22 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="page-list-display">
-                    {!this.state.show ? <img src={Lefticon} className={this.state.show ? "true-scroll-page-container-image" : "scroll-page-contianer-image"} onClick={this.getSessionList.bind(this)} />
-                        : <img src={Righticon} className={this.state.show ? "true-scroll-page-container-image" : "scroll-page-contianer-image"} onClick={this.getSessionList.bind(this)} />
+                    {!this.state.show ? <img src={Lefticon} className={this.state.show ? "true-scroll-page-container-image" : "scroll-page-contianer-image"} onClick={this.getIconClick.bind(this)} />
+                        : <img src={Righticon} className={this.state.show ? "true-scroll-page-container-image" : "scroll-page-contianer-image"} onClick={this.getIconClick.bind(this)} />
                     }
-                    <div className="scroll-page-contianer">
-                        {this.state.show && <div className="visible-text">
-                            {
-                                Item.session.map(e => {
-                                    return <Link className="option-render" onClick={this.getSessionList.bind(this)} to={e.id} hashSpy={true} spy={true} smooth={true}>
+                    {this.state.show && <div className="scroll-page-contianer">
+                        <div className="visible-text">
+                            {Item.session.map((e, i) => {
+                                return <Slide direction="left" time={true ? 2000 : ""} in={this.state.show} mountOnEnter unmountOnExit>
+                                    <Link className={this.state.active === e.id ? "option-render active-page" : "option-render"} onClick={this.getSessionList.bind(this, e.id)} to={e.id} hashSpy={true} spy={true} smooth={true}>
                                         {e.displayName}
                                     </Link>
-                                })
+                                </Slide>
+                            })
                             }
                         </div>
-                        }
                     </div>
+                    }
                     <div>
                     </div>
                 </div>

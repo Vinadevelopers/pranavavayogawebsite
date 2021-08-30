@@ -293,6 +293,10 @@ a.option-render:hover{
     background-color: #f55aac;
     color: #fff;
 }
+a.option-render.active-page {
+    background-color: #f55aac;
+    color: #ffffff
+}
 .scroll-page-contianer-image{
     list-style: none;
     position: fixed;
@@ -309,10 +313,18 @@ a.option-render:hover{
     right: 12%;
     width: 30px;
     transform: translateY(-50%);
-    transition: right .4s ease;
+    transition: right .0s ease;
 }
 
 /*footer */
 .white-text{
     color:#ffffff;  
+}
+.Cell-dayOfMonth-27 {
+    display: none;
+}
+p.Cell-dayOfWeek-26 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
