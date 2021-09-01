@@ -14,7 +14,7 @@ class Footer extends React.Component {
     GetRightItem() {
         return Item.footerDetails.item.map(e => {
             return <div className="righ_item" id={e.id}>
-             <Link className ="a-link" to={e.id} spy={true} smooth={true}>{e.displayName}</Link>
+                <Link className="a-link" to={e.id} spy={true} smooth={true}>{e.displayName}</Link>
             </div>
         })
     }
@@ -42,6 +42,12 @@ class Footer extends React.Component {
                     <Avatar className="twitter" >
                         <TwitterIcon />
                     </Avatar>
+                </div>
+                <div className="copy-right-line">
+                    <p>copyright@2021Pranavayagocbe.com</p>
+                    <p className="devloper-name">
+                        Developed by : Vinatechnologies
+                    </p>
                 </div>
             </div>
         );

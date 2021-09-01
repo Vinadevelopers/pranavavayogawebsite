@@ -368,3 +368,11 @@ p.Cell-dayOfWeek-26 {
 .timeTable_page .makeStyles-appointment-275,.timeTable_page .makeStyles-appointment-279 {
     background-color: rgb(246 100 215);
 }
+.copy-right-line {
+    display: flex;
+    color: #bbb9b9;
+}
+p.devloper-name{
+    width: 100%;
+    text-align: end;
+}
