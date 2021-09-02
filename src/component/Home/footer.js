@@ -20,7 +20,9 @@ class Footer extends React.Component {
     }
 
     render() {
+        const renderHTML = (rawHTML) => React.createElement("div", { class:"copy-right", dangerouslySetInnerHTML: { __html: rawHTML } });
         return (
+            
             <div id="contact" className="Footer_container">
                 <div className="footer_center_logo">
                     <img src={Logo} className="logo" />
@@ -44,7 +46,7 @@ class Footer extends React.Component {
                     </Avatar>
                 </div>
                 <div className="copy-right-line">
-                    <p>copyright@2021Pranavayagocbe.com</p>
+                    {renderHTML("<p> &#169 2021 - Pranavayagocbe.com</p>")}
                     <p className="devloper-name">
                         Developed by : Vinatechnologies
                     </p>

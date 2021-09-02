@@ -371,8 +371,15 @@ p.Cell-dayOfWeek-26 {
 .copy-right-line {
     display: flex;
     color: #bbb9b9;
+    height: 4px;
 }
+
+.copy-right {
+    width: 50%;
+    text-align: initial;
+}
+
 p.devloper-name{
-    width: 100%;
+    width: 50%;
     text-align: end;
 }
