@@ -33,16 +33,16 @@ class Footer extends React.Component {
                 </div>
                 <div className="footer_socical_icon">
                     <Avatar className="facebook">
-                        <FacebookIcon />
+                    <a  target="_new" href="https://www.facebook.com/pranavayogacbe"><FacebookIcon /></a>
                     </Avatar>
                     <Avatar className="insta" >
-                        <InstagramIcon />
+                    <a  target="_new" href="https://www.instagram.com/pranavayoga_/"><InstagramIcon /></a>
                     </Avatar>
                     <Avatar className="youtupe">
-                        <YouTubeIcon />
+                    <a  target="_new" href="https://www.youtube.com/channel/UCD4097lpQKti5twtb0C8oPw"><YouTubeIcon /></a>
                     </Avatar>
                     <Avatar className="twitter" >
-                        <TwitterIcon />
+                       <a  target="_new" href="https://twitter.com/home"><TwitterIcon /></a>
                     </Avatar>
                 </div>
                 <div className="copy-right-line">
