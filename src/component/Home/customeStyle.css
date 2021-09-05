@@ -383,3 +383,15 @@ p.devloper-name{
     width: 50%;
     text-align: end;
 }
+
+/*fourth page*/
+
+
+.MuiImageListItem-root:hover {
+    transform:scale(1.0);
+    transition: transform 1.5s;;
+}
+
+.MuiImageListItem-root:hover {
+    transform:scale(0.96);
+}
