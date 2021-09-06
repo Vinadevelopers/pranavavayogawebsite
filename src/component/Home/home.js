@@ -11,6 +11,7 @@ import { Link } from 'react-scroll';
 import Lefticon from "./image/left-icon.gif";
 import Righticon from "./image/right-icon.gif";
 import { Slide } from "@material-ui/core"
+import { getDeviceType } from "./helper";
 
 const Item = require("./details.json")
 
@@ -47,6 +48,7 @@ class Home extends React.Component {
     }
 
     render() {
+        const deviceMode = getDeviceType()
         return (
             <div className="home_page_root_container">
                 <div className="home_page_inner_container">
@@ -67,7 +69,7 @@ class Home extends React.Component {
                         <div id="contact">  <Footer /></div>
                     </div>
                 </div>
-                <div className="page-list-display">
+                {deviceMode !== "mobile" && <div className="page-list-display">
                     {!this.state.show ? <img src={Lefticon} className={this.state.show ? "true-scroll-page-container-image" : "scroll-page-contianer-image"} onClick={this.getIconClick.bind(this)} />
                         : <img src={Righticon} className={this.state.show ? "true-scroll-page-container-image" : "scroll-page-contianer-image"} onClick={this.getIconClick.bind(this)} />
                     }
@@ -87,6 +89,7 @@ class Home extends React.Component {
                     <div>
                     </div>
                 </div>
+                }
             </div>
         );
     }

@@ -395,3 +395,65 @@ p.devloper-name{
 .MuiImageListItem-root:hover {
     transform:scale(0.96);
 }
+
+
+
+
+
+/* media quer*/
+@media only screen and (max-width: 600px) {
+    .header_container{
+        padding: 0px;
+    }
+    .header_left_side {
+        width: 35%;
+    }
+    .header_right_side {
+        width: auto;
+        font-size: 14px;
+    }
+    .heder-right-item-container{
+        width: auto;
+    }
+    .page_loaded, .page-load-third-part, #secondPage, .page-load-third-part{
+        padding: 0px 8px 0px 8px;
+    }
+    div#firstPage, .third_page_title h3 {
+        text-align: center;
+    }
+    .secound_page_image {
+        margin-bottom: 14px;
+        margin-top: 18px;
+    }
+    .secound_page_image img {
+        width: 210px;
+        height: 200px;
+    }
+    .all_description_text {
+        text-align: justify;
+    }
+    .secound_page_image1,.third_page_image {
+        justify-content: center;
+    }
+    .secound_page_image1 img {
+        width: 300px;
+    }
+    .third_page_title {
+        text-align: -webkit-center;
+    }
+    .footer_option .righ_item{
+        padding-left: 0px;
+        padding-right: 20px;
+    }  
+    .Footer_container{
+        padding: 12px;
+    } 
+    .copy-right-line {
+        height: auto;
+        font-size: 11px;
+    }
+    .contact-page-container .MuiGrid-root.contact-page.MuiGrid-container.MuiGrid-spacing-xs-2 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

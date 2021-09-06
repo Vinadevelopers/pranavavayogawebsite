@@ -6,21 +6,25 @@ import LOTUS from "../image/icons-lotus.png";
 import LOTUS1 from "../image/icons-yoga1.png";
 import MATTE from "../image/icons-yoga-mat.png";
 import Avatar from '@material-ui/core/Avatar';
-
+import { getDeviceType } from "../helper";
 const item = require("../details.json");
 
 class ThirdPage extends React.Component {
     render() {
+        const deviceMode = getDeviceType()
         return (
             <Grid container spacing={2} className="third_page_container">
-                <Grid item md={6} sm={6} xs={12}>
+                {deviceMode !== "mobile" && <Grid item md={6} sm={6} xs={12}>
                     <div className="third_page_image">
                         <img src={Image3} />
                     </div>
-                </Grid>
+                </Grid>}
                 <Grid item md={6} sm={6} xs={12}>
                     <div className="third_page_title">
                         <h3>{item.ThirdPage["title"]}</h3>
+                        <div className="third_page_image">
+                            <img src={Image3} />
+                        </div>
                         <p className="all_description_text_color">{item.ThirdPage["description1"]}</p>
                         <p className="all_description_text_dark">{item.ThirdPage["description2"]}</p>
                         <p className="all_description_text">{item.ThirdPage["description3"]}</p>
