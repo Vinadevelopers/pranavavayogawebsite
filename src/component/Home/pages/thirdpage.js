@@ -22,9 +22,9 @@ class ThirdPage extends React.Component {
                 <Grid item md={6} sm={6} xs={12}>
                     <div className="third_page_title">
                         <h3>{item.ThirdPage["title"]}</h3>
-                        <div className="third_page_image">
+                        {deviceMode === "mobile" && <div className="third_page_image">
                             <img src={Image3} />
-                        </div>
+                        </div>}
                         <p className="all_description_text_color">{item.ThirdPage["description1"]}</p>
                         <p className="all_description_text_dark">{item.ThirdPage["description2"]}</p>
                         <p className="all_description_text">{item.ThirdPage["description3"]}</p>

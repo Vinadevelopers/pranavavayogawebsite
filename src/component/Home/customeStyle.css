@@ -184,7 +184,7 @@ div#firstPage {
 }
 .third_page_image {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
 }
 .third_page_image img {
     width: 80%;
