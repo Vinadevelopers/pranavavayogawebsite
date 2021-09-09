@@ -27,7 +27,7 @@ class ThirdPage extends React.Component {
                         </div>}
                         <p className="all_description_text_color">{item.ThirdPage["description1"]}</p>
                         <p className="all_description_text_dark">{item.ThirdPage["description2"]}</p>
-                        <p className="all_description_text">{item.ThirdPage["description3"]}</p>
+                        <p className="all_description_text"><span>{'   '}</span>{item.ThirdPage["description3"]}</p>
                     </div>
                 </Grid>
                 {/* part1 */}
@@ -35,7 +35,7 @@ class ThirdPage extends React.Component {
                     <div className="third_page_title">
                         <Avatar alt="Remy Sharp" src={YOGO} />
                         <h3>{item.ThirdPage.yogoClass.part1["title"]}</h3>
-                        <p className="all_description_text">{item.ThirdPage.yogoClass.part1["description"]}</p>
+                        <p className="all_description_text"><span>{'   '}</span>{item.ThirdPage.yogoClass.part1["description"]}</p>
                     </div>
                 </Grid>
                 {/* part2 */}
@@ -43,7 +43,7 @@ class ThirdPage extends React.Component {
                     <div className="third_page_title">
                         <Avatar alt="Remy Sharp" src={LOTUS} />
                         <h3>{item.ThirdPage.yogoClass.part2["title"]}</h3>
-                        <p className="all_description_text">{item.ThirdPage.yogoClass.part2["description"]}</p>
+                        <p className="all_description_text"><span>{'   '}</span>{item.ThirdPage.yogoClass.part2["description"]}</p>
                     </div>
                 </Grid>
                 {/* part3 */}
@@ -51,7 +51,7 @@ class ThirdPage extends React.Component {
                     <div className="third_page_title">
                         <Avatar alt="Remy Sharp" src={LOTUS1} />
                         <h3>{item.ThirdPage.yogoClass.part3["title"]}</h3>
-                        <p className="all_description_text">{item.ThirdPage.yogoClass.part3["description"]}</p>
+                        <p className="all_description_text"><span>{'   '}</span>{item.ThirdPage.yogoClass.part3["description"]}</p>
                     </div>
                 </Grid>
                 {/* part4 */}
@@ -59,7 +59,7 @@ class ThirdPage extends React.Component {
                     <div className="third_page_title">
                         <Avatar alt="Remy Sharp" src={MATTE} />
                         <h3>{item.ThirdPage.yogoClass.part4["title"]}</h3>
-                        <p className="all_description_text">{item.ThirdPage.yogoClass.part4["description"]}</p>
+                        <p className="all_description_text"><span>{'   '}</span>{item.ThirdPage.yogoClass.part4["description"]}</p>
                     </div>
                 </Grid>
             </Grid>

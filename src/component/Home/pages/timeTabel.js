@@ -73,7 +73,7 @@ class TimeTable extends React.Component {
                     <Grid item md={4}>
                         <div className="timeTable_page_inner_container">
                             <h3>{item.TimeTable.title}</h3>
-                            <p className="all_description_text">{item.TimeTable.description}</p>
+                            <p className="all_description_text"><span>{'   '}</span>{item.TimeTable.description}</p>
                         </div>
                     </Grid>
                 </Grid>
