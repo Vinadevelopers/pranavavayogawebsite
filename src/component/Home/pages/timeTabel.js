@@ -15,6 +15,14 @@ import { Grid } from "@material-ui/core";
 const item = require("../details.json");
 
 export const appointments = [
+
+    {
+        title: 'Gents Class',
+        startDate: new Date(2018, 5, 24, 9),
+        endDate: new Date(2018, 5, 24, 10),
+        id: 0,
+        location: 'Room 1',
+    },
     {
         title: 'Gents Class',
         startDate: new Date(2018, 5, 25, 9),
