@@ -428,7 +428,7 @@ class TimeTable extends React.Component {
                 
                             startDayHour={4}
                             intervalCount={1}
-                            cellDuration={90}
+                            cellDuration={60}
                             endDayHour={21}
                             
                         />
