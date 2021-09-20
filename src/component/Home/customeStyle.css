@@ -61,7 +61,8 @@ line-height: 1.5;
 }
 .first_page{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("./image/yogo.jpg"); */
-    background-image: url("./image/hero.png");
+    /* background-image: url("./image/hero.png"); */
+    background-image: url("./image/yogahero.JPG");
     /* background-image: url("./image/yogo.jpg"); */
     width: 100%;
     height: 615px;
