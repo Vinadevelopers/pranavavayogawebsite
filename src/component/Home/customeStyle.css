@@ -72,15 +72,17 @@ line-height: 1.5;
     position: relative;
 }
 p.first-page-title {
-    font-size: 32px;
+    font-size: 64px;
     color: #fff;
     text-align: center;
+    margin:0px;
 }
 .first-page-descr-contianer{
     /* max-width: 390px; */
-    max-width: fit-content;
+    /* max-width: fit-content; */
     font-size: 15px;
     color: #fff;
+
 }
 .first_text_box{
     width: 100%;
