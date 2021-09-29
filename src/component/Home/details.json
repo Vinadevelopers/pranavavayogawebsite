@@ -8,7 +8,7 @@
         {
             "id": "about",
             "displayName": "About Us",
-            "href": "about"
+            "href": "/about"
         },
         {
             "id": "contact",
@@ -81,11 +81,13 @@
             },
             {
                 "id": "about",
-                "displayName": "About Us"
+                "displayName": "About Us",
+                "href":"/about"
             },
             {
                 "id": "contact",
-                "displayName": "Contact Us"
+                "displayName": "Contact Us",
+                "href":"/contact"
             }
         ]
     }

@@ -421,10 +421,20 @@ h3:hover{
     animation: mymove 5s infinite;
 } 
 
-
+.about-field{
+    width: 50%
+}
+.footer_option a {
+    text-decoration: none;
+    color: #ffff;
+}
 
 /* media quer*/
 @media only screen and (max-width: 600px) {
+    .about-field{
+        padding: 10px;
+        width: auto
+    }
     .header_container{
         padding: 0px;
     }
