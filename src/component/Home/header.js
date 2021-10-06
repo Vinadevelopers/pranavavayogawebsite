@@ -25,7 +25,7 @@ class Header extends React.Component {
         return (
             <div className={this.props.id ? "contact-page-header header_container" : "header_container"}>
                 <div className="header_left_side">
-                    <img src={Logo} className="logo" />
+                    <li><a href="https://pranavayogacbe.com/"><img src={Logo} className="logo" /></a></li>
                     {/* <p className="white-text">The Meaning Of Life</p>                    */}
                 </div>
                 <div className="header_right_side">

@@ -8,7 +8,7 @@ class AboutPage extends React.Component {
         return <div className="contact-page-container">
             <Header id={true} />
             <Grid container spacing={2} className="contact-page">
-                <Grid className="contact-title" item md={12} sm={12} xs={12}>
+                <Grid className="about-title" item md={12} sm={12} xs={12}>
                     <h4>{page.title}</h4>
                 </Grid>
                 <Grid className="address-field-root" item md={12} sm={11} xs={11}>

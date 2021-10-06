@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Grid } from "@material-ui/core";
-import Image1 from "../image/image_1.jpg";
-import Image2 from "../image/rightsideImage.jpg";
+import Image1 from "../image/top2.jpg";
+import Image2 from "../image/top1.jpg";
 import { getDeviceType } from "../helper";
 const item = require("../details.json");
 

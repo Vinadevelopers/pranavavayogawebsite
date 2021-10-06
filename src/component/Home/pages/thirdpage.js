@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Grid } from "@material-ui/core";
 import Image3 from "../image/online-yoga.jpg";
+import top3 from "../image/top3.jpg";
 import YOGO from "../image/icons-guru.png";
 import LOTUS from "../image/icons-lotus.png";
 import LOTUS1 from "../image/icons-yoga1.png";
@@ -16,7 +17,7 @@ class ThirdPage extends React.Component {
             <Grid container spacing={2} className="third_page_container">
                 {deviceMode !== "mobile" && <Grid item md={6} sm={6} xs={12}>
                     <div className="third_page_image">
-                        <img src={Image3} />
+                        <img src={top3} />
                     </div>
                 </Grid>}
                 <Grid item md={6} sm={6} xs={12}>
